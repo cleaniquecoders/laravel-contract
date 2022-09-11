@@ -5,15 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/bekwoh/laravel-contract/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/bekwoh/laravel-contract/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/bekwoh/laravel-contract.svg?style=flat-square)](https://packagist.org/packages/bekwoh/laravel-contract)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
-
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-contract.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-contract)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+A simple package to handle common contracts. 
 
 ## Installation
 
@@ -23,38 +15,52 @@ You can install the package via composer:
 composer require bekwoh/laravel-contract
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-contract-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="laravel-contract-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-contract-views"
-```
 
 ## Usage
 
-```php
-$laravelContract = new Bekwoh\LaravelContract();
-echo $laravelContract->echoPhrase('Hello, Bekwoh!');
+```bash
+php artisan make:contract Action
 ```
+
+The command will generate the contract:
+
+```php
+<?php
+
+namespace App\Contracts;
+
+interface Action 
+{
+    
+}
+```
+
+Available contracts in this package:
+
+[Bekwoh/LaravelContract/Contracts/Api](src/Contracts/Api.php)
+
+This allow standard form of getting the API response structure. However, you don't need to use this if using Pagination.
+
+```php 
+return response()->json(
+    $api->getApiResponse(request()),
+    $api->getCode()
+);
+```
+
+[Bekwoh/LaravelContract/Contracts/Builder](src/Contracts/Builder.php)
+
+This contract allow you to build objects more consistent. `$wall->build()`, `$door->build()`. 
+
+For your reference: [Builder](https://refactoring.guru/design-patterns/builder)
+
+[Bekwoh/LaravelContract/Contracts/Execute](src/Contracts/Execute.php)
+
+Execute contract allow you to consistently call `$object->execute()`. This contract usually use when we are triggering something to be execute after preparing the object.
+
+[Bekwoh/LaravelContract/Contracts/Menu](src/Contracts/Menu.php)
+
+Menu contract simpley return a list of menus that you can use to build your Sidebar, Navbar, etc.
 
 ## Testing
 
