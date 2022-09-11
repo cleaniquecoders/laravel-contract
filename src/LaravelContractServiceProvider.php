@@ -2,9 +2,9 @@
 
 namespace Bekwoh\LaravelContract;
 
+use Bekwoh\LaravelContract\Commands\LaravelContractCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Bekwoh\LaravelContract\Commands\LaravelContractCommand;
 
 class LaravelContractServiceProvider extends PackageServiceProvider
 {

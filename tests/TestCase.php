@@ -2,9 +2,9 @@
 
 namespace Bekwoh\LaravelContract\Tests;
 
+use Bekwoh\LaravelContract\LaravelContractServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Bekwoh\LaravelContract\LaravelContractServiceProvider;
 
 class TestCase extends Orchestra
 {
