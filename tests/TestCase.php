@@ -1,8 +1,8 @@
 <?php
 
-namespace Bekwoh\LaravelContract\Tests;
+namespace CleaniqueCoders\LaravelContract\Tests;
 
-use Bekwoh\LaravelContract\LaravelContractServiceProvider;
+use CleaniqueCoders\LaravelContract\LaravelContractServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Bekwoh\\LaravelContract\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'CleaniqueCoders\\LaravelContract\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

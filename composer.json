@@ -1,12 +1,12 @@
 {
-    "name": "bekwoh/laravel-contract",
+    "name": "cleaniquecoders/laravel-contract",
     "description": "Common Contracts for Laravel",
     "keywords": [
-        "bekwoh",
+        "cleaniquecoders",
         "laravel",
         "laravel-contract"
     ],
-    "homepage": "https://github.com/bekwoh/laravel-contract",
+    "homepage": "https://github.com/cleaniquecoders/laravel-contract",
     "license": "MIT",
     "authors": [
         {
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Bekwoh\\LaravelContract\\": "src",
-            "Bekwoh\\LaravelContract\\Database\\Factories\\": "database/factories"
+            "CleaniqueCoders\\LaravelContract\\": "src",
+            "CleaniqueCoders\\LaravelContract\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Bekwoh\\LaravelContract\\Tests\\": "tests"
+            "CleaniqueCoders\\LaravelContract\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -60,10 +60,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Bekwoh\\LaravelContract\\LaravelContractServiceProvider"
+                "CleaniqueCoders\\LaravelContract\\LaravelContractServiceProvider"
             ],
             "aliases": {
-                "LaravelContract": "Bekwoh\\LaravelContract\\Facades\\LaravelContract"
+                "LaravelContract": "CleaniqueCoders\\LaravelContract\\Facades\\LaravelContract"
             }
         }
     },

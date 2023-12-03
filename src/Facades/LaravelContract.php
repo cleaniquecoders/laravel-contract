@@ -1,16 +1,16 @@
 <?php
 
-namespace Bekwoh\LaravelContract\Facades;
+namespace CleaniqueCoders\LaravelContract\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Bekwoh\LaravelContract\LaravelContract
+ * @see \CleaniqueCoders\LaravelContract\LaravelContract
  */
 class LaravelContract extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Bekwoh\LaravelContract\LaravelContract::class;
+        return \CleaniqueCoders\LaravelContract\LaravelContract::class;
     }
 }

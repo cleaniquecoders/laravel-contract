@@ -1,6 +1,6 @@
 <?php
 
-namespace Bekwoh\LaravelContract;
+namespace CleaniqueCoders\LaravelContract;
 
 class LaravelContract
 {

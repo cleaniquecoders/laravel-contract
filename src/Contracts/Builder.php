@@ -1,6 +1,6 @@
 <?php
 
-namespace Bekwoh\LaravelContract\Contracts;
+namespace CleaniqueCoders\LaravelContract\Contracts;
 
 interface Builder
 {

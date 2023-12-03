@@ -1,6 +1,6 @@
 <?php
 
-namespace Bekwoh\LaravelContract\Commands;
+namespace CleaniqueCoders\LaravelContract\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 
