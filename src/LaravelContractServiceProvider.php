@@ -1,8 +1,8 @@
 <?php
 
-namespace Bekwoh\LaravelContract;
+namespace CleaniqueCoders\LaravelContract;
 
-use Bekwoh\LaravelContract\Commands\LaravelContractCommand;
+use CleaniqueCoders\LaravelContract\Commands\LaravelContractCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
