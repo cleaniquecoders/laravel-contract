@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-contract` will be documented in this file.
 
+## 1.4.0 - 2025-05-01
+
+**Full Changelog**: https://github.com/cleaniquecoders/laravel-contract/compare/1.3.0...1.4.0
+
 ## Added Laravel 11 Support - 2024-03-21
 
 **Full Changelog**: https://github.com/cleaniquecoders/laravel-contract/compare/1.2.0...1.3.0
