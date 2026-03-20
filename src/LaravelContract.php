@@ -2,6 +2,4 @@
 
 namespace CleaniqueCoders\LaravelContract;
 
-class LaravelContract
-{
-}
+class LaravelContract {}
